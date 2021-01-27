@@ -1,0 +1,15 @@
+﻿.card .card-content {
+    padding: 24px;
+    border-radius: 0 0 2px 2px;
+}
+
+
+.col .row {
+    margin-right: -.75rem;
+    margin-left: -.75rem;
+}
+
+img.responsive-img, video.responsive-video {
+    max-width: 100%;
+    height: auto;
+}

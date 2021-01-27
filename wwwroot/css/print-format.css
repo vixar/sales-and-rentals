@@ -1,0 +1,350 @@
+﻿
+/**
+ * Print stylesheet for andamios dominicanos
+*  @version         1.0
+*  @lastmodified    08.10.2020
+*  @Autor:          Vickry Santana
+*/
+
+    /*@import url(https://fonts.googleapis.com/css?family=Mulish:300,300i,400,400i,500,600);*/
+@media print {
+    .page-break {
+        display: block;
+        page-break-before: always;
+    }
+    /*.tbl{display:table;}
+    .tbl > div{display:table-row;}*/
+    /* table structure is three level: table > row > cell */
+    /*.tbl > div > *{display:table-cell;}*/
+    /* special cases */
+    /*.tbl .tbl-head{display:table-header-group;}
+    .tbl .tbl-body{display:table-row-group;}
+    .tbl .tbl-foot{display:table-footer-group; page-break-after:always}*/
+
+    #logoPrint {
+        width: 50% !important
+    }
+    .col3 {
+        width: 33.33%;
+        display: block;
+        float: left;
+        padding-right: 5px;
+    }
+    .col2 {
+        width: 50%;
+        display: block;
+        float: left;
+        padding-right: 10px;
+    }
+    .fila{
+        margin-bottom: 15px;
+    }
+    /*
+    .content, #page {
+        width: 100%;
+        margin: 0;
+        float: none;
+        position:relative;
+    }*/
+    .header, .header-space,
+    .footer, .footer-space {
+        height: 185px;
+    }
+/*    .footer {
+        height: 50px;
+    }*/
+    .inner-space {
+        height: 185px;
+    }
+    .right-align {
+        text-align: right;
+    }
+    .header {
+        position: fixed;
+        top: 0;
+        page-break-after: auto;
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        page-break-before: auto;
+
+    }
+    table > tfoot > h1 {
+        page-break-before: always;
+    }
+    #footer {
+        position: absolute;
+        bottom: -10px;
+    }
+
+    .contrato {
+        top: 0;
+        position: relative;
+    }
+
+    td {
+        page-break-inside: auto;
+        page-break-after: auto;
+    }
+
+    .print-page-break-table {
+        page-break-before: always;
+
+    }
+    .print-page-break-tr {
+        page-break-inside: avoid;
+        page-break-after: auto
+    }
+    /** Setting margins */
+    @page {
+        size: 8.27in 11.69in;
+        margin: 0.7cm 0.05cm 2cm 0.5cm;
+
+        @bottom-right {
+            /*margin-top: 1cm;*/
+            content: counter(page) " / " counter(pages);
+        }
+    }
+
+    .tr-table-break {
+        display: block;
+        page-break-before: always;
+    }
+
+    /* Or: */
+/*    @page :left {
+        margin: 0.5cm;
+    }
+
+    @page :right {
+        margin: 0.5cm;
+    }
+*/
+    /* The first page of a print can be manipulated as well */
+ /*   @page :first {
+        margin: 1cm 0.5cm;
+    }*/
+
+
+    body {
+        font-size: 11px;
+        font-family: 'Mulish', sans-serif;
+        line-height: 1.3;
+        background: #fff !important;
+        color: #000;
+    }
+
+    h1 {
+        font-size: 24pt;
+    }
+
+    h2, h3, h4 {
+        font-size: 14pt;
+        margin-top: 25px;
+    }
+    h5{
+        font-size: 14pt;
+    }
+    print-font-size {
+        font-size: 10px !important;
+    }
+    .p-empresa {
+        font-size: 11px;
+    }
+
+    .print-float-r{
+        float:right;
+    }
+    .print-float-l {
+        float: left !important;
+    }
+    /* Defining all page breaks */
+    a {
+        page-break-inside: avoid
+    }
+
+    blockquote {
+        page-break-inside: avoid;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+        page-break-inside: avoid
+    }
+    div.tablePage {
+        page-break-inside: avoid;
+        page-break-after: always;
+    }
+    img {
+        page-break-inside: avoid;
+        page-break-after: avoid;
+    }
+
+    #splitForPrint > tbody::after {
+        content: '';
+        display: block;
+        page-break-after: always;
+        page-break-inside: avoid;
+        page-break-before: avoid;
+    }
+/*
+    table, pre {
+        page-break-inside: avoid
+    }*/
+
+    ul, ol, dl {
+        page-break-before: avoid
+    }
+
+    /* Displaying link color and link behaviour */
+    a:link, a:visited, a {
+        background: transparent;
+        color: #520;
+        font-weight: bold;
+        text-decoration: underline;
+        text-align: left;
+    }
+
+    a {
+        page-break-inside: avoid
+    }
+
+        a[href^=http]:after {
+            content: " < " attr(href) "> ";
+        }
+
+    $a:after > img {
+        content: "";
+    }
+
+    article a[href^="#"]:after {
+        content: "";
+    }
+
+    a:not(:local-link):after {
+        content: " < " attr(href) "> ";
+    }
+
+    table {
+        page-break-inside: auto
+    }
+
+    tr {
+        page-break-inside: avoid;
+        page-break-after: auto
+    }
+
+    thead {
+        display: table-header-group
+    }
+
+    tfoot {
+        display: table-footer-group
+    }
+    /* Hiding unnecessary elements for the print */
+
+    #header-widgets, nav, aside.mashsb-container,
+    .sidebar, .mashshare-top, .mashshare-bottom,
+    .content-ads, .make-comment, .author-bio,
+    .heading, .related-posts, #decomments-form-add-comment,
+    #breadcrumbs, #footer, .post-byline, .meta-single,
+    .site-title img, .post-tags, .readability {
+        display: none;
+    }
+
+    /* Adding custom messages before and after the content */
+    .entry:after {
+        content: "\ All Rights Reserved. (c) 2014 - 2016 ";
+        color: #999 !important;
+        font-size: 1em;
+        padding-top: 30px;
+    }
+
+    #header:before {
+        content: "\ Thank you for printing our article. We hope that some of our other articles can catch your eye as well.";
+        color: #777 !important;
+        font-size: 1em;
+        padding-top: 30px;
+        text-align: center !important;
+    }
+    /*
+
+        MATERIALIZE CSS
+    */
+    .row {
+        margin-bottom: 0;
+    }
+    .col .row {
+        margin-right: -.75rem;
+        margin-left: -.75rem;
+    }
+    .row .col.s4 {
+        right: auto;
+        left: auto;
+        width: 33.33333%;
+        margin-left: auto;
+    }
+
+    .row .col.l12 {
+        right: auto;
+        left: auto;
+        width: 100%;
+        margin-left: auto;
+    }
+    table {
+        display: table;
+        width: 100%;
+        border-spacing: 0;
+        border-collapse: collapse;
+    }
+    tr {
+        border-bottom: 1px solid rgba(0, 0, 0, .12);
+    }
+
+    td, th {
+        display: table-cell;
+        padding: 15px 5px;
+        text-align: left;
+        vertical-align: middle;
+        border-radius: 2px;
+    }
+
+    .border-none {
+        border-top: none !important;
+        border-right: none !important;
+        border-bottom: none !important;
+        border-left: none !important;
+    }
+    input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+        font-size: 1rem;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        width: 100%;
+        height: 3rem;
+        margin: 0 0 8px 0;
+        padding: 0;
+        -webkit-transition: border .3s, -webkit-box-shadow .3s;
+        -moz-transition: box-shadow .3s, border .3s;
+        -o-transition: box-shadow .3s, border .3s;
+        transition: border .3s, -webkit-box-shadow .3s;
+        transition: box-shadow .3s, border .3s;
+        transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
+        border: none;
+        border-bottom: 1px solid #9e9e9e;
+        border-radius: 0;
+        outline: none;
+        background-color: transparent;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .row .col.l8 {
+        right: auto;
+        left: auto;
+        width: 66.66667%;
+        margin-left: auto;
+    }
+}

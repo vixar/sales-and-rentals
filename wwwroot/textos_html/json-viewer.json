@@ -1,0 +1,50 @@
+[
+    {
+        "GuiaPostulanteID": 53169,
+        "EjemploID": 1560,
+        "PremioID": null,
+        "Siglas": null,
+        "Ejemplo": null,
+        "EvaluadorID": 270,
+        "EValuador": null,
+        "Fortalezas": "<ul>\n<li>Apego a las normaticvas y marco de la Instituciones rectores.</li>\n<li>Adecuaciones seg&uacute;b las politicas y normas establecidas por el Organo rector.</li>\n</ul>",
+        "InformRetorno": "<ul>\n<li>Firma y sello de los documentos oficiales.</li>\n</ul>",
+        "PuntoDeVista": null
+    },
+    {
+        "GuiaPostulanteID": 53169,
+        "EjemploID": 1560,
+        "PremioID": null,
+        "Siglas": null,
+        "Ejemplo": null,
+        "EvaluadorID": 301,
+        "EValuador": null,
+        "Fortalezas": "<p>La Escuela Flor del Campo identifica las pol&iacute;ticas p&uacute;blicas que afectan a la instituci&oacute;n.</p>",
+        "InformRetorno": "<p>No muestra evidencias.</p>",
+        "PuntoDeVista": null
+    },
+    {
+        "GuiaPostulanteID": 53169,
+        "EjemploID": 1560,
+        "PremioID": null,
+        "Siglas": null,
+        "Ejemplo": null,
+        "EvaluadorID": 269,
+        "EValuador": null,
+        "Fortalezas": "<p>Se evidencia en el plan estrat&eacute;gico 2015-2020 que han identificado las normativas y pol&iacute;ticas que afectan a la instituci&oacute;n.</p>",
+        "InformRetorno": "<p>No se evidencia.</p>",
+        "PuntoDeVista": "<p>test</p>"
+    },
+    {
+        "GuiaPostulanteID": 53169,
+        "EjemploID": 1560,
+        "PremioID": null,
+        "Siglas": null,
+        "Ejemplo": null,
+        "EvaluadorID": 307,
+        "EValuador": null,
+        "Fortalezas": "<p>Se evidencia en el plan estrat&eacute;gico 2015-2020 que han identificado las normativas y pol&iacute;ticas que afectan a la instituci&oacute;n.</p>",
+        "InformRetorno": "<p>No se evidencia.</p>",
+        "PuntoDeVista": "<p>test</p>"
+    }
+]

@@ -1,0 +1,92 @@
+/*================================================================================
+	Item Name: Materialize - Material Design Admin Template
+	Version: 5.0
+	Author: PIXINVENT
+	Author URL: https://themeforest.net/user/pixinvent/portfolio
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN CSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+.header-print {
+    position: fixed;
+    top: 0;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.footer-print {
+    /*    position: absolute;
+    bottom: 0;*/
+/*        page-break-after:always;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;*/
+}
+
+/*@media print {
+
+    #pageBreak {
+        page-break-before: always;
+        page-break-inside: avoid;
+    }
+}
+
+.outer {
+    position: relative;
+    height: 230px;*/
+    /*background-color: yellow;*/
+/*}
+
+.inner {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);*/
+    /*background-color: green;*/
+    /*width: 50%;
+}*/
+
+/*@media print {
+    .myDivToPrint {
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 15px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    #tituloPrint {
+        text-align: center !important;
+        font-size: 25px;
+    }
+    #headerPrint {
+        font-size: 12px;
+
+    }
+    #rHeaderPrint {
+        right: auto;
+        left: auto;
+        width: 50%;
+        margin-left: auto;
+        background-color: blue;
+    }
+    .non-printable {
+        display: none !important;
+    }
+    #logoPrint {
+        width: 20% !important;
+    }
+}*/
